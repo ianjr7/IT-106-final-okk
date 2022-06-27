@@ -1,0 +1,67 @@
+<div class="home">
+    <div class="navar">
+        <div class="left">
+            <h2>FINAL TERM REQUIREMENTS</h2>
+        </div>
+        <div class="right">
+            <a href="#">About</a>
+            <a href="{% url 'logout' %}">Logout</a>
+            
+        </div>
+    </div>
+    <div class="container2">
+        <div class="line1">
+            <h2 class="ok">Welcome</h2>
+            <p> {{user}}</p>
+           
+        </div>
+    </div>
+   
+    <h1>WELCOME</h1>
+</div>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .home .navar{
+        background-color: #E73D5D;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        align-items: center;
+        
+    }
+    .home h2{
+        color: white;
+    }
+    .home .navar .right a{
+        color: white;
+        padding: 0 20px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .home .navar .right a:hover{
+        color: rgb(193, 193, 193);
+    }
+
+    .container2{
+        background-color: black;
+    }
+    .line1{
+        padding: 10px 20px;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+    
+    }
+    .line1 p{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .line1 .ok{
+        color: #E73D5D;
+        margin-right: 20px;
+    }
+</style>
