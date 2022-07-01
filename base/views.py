@@ -55,4 +55,15 @@ def logout_user(request):
 def home(request):
     return render(request, 'base/home.html') 
 
+
+def later(request):
+    return render(request, 'base/delete_later.html')
+
+
+def index(request):
+    return render(request, 'base/index.html')
    
+
+
+def meetings(request):
+    return render(request, 'base/meetings.html')
